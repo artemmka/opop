@@ -1,4 +1,4 @@
-﻿uses Crt, Compl, CompMatr, VectR, VectC, Stack, QueueLib, doublemenu, SubTrees,MakeFiles,MakeTree;
+﻿uses Crt, Compl, CompMatr, VectR, VectC, Stack, QueueLib, doublemenu, SubTrees,MakeFiles,MakeTree,BTrees;
 var Mode: integer;
     Ok: boolean;
     begin
@@ -30,7 +30,7 @@ var Mode: integer;
               7: LevelMenu;
               8: StudentsMenu;
               9: MenuTree;
-              10: MenuTtree;
+              10: BinTreesMenu;
               0: Ok:= false
               else
                 begin

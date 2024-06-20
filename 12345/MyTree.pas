@@ -241,18 +241,18 @@ begin
   while Ok do
   begin
     ClrScr;
-    GoToXY(50, 1);writeln('Деревья');
-    GoToXY(47, 2);writeln('Выбери пункт');
-    GoToXY(45, 5);writeln('1: Создать дерево');
-    GoToXY(45, 7);writeln('2: Обход сверху вниз');
-    GoToXY(45, 9);writeln('3: Обход снизу вверх');
-    GoToXY(45, 11);writeln('4: Обход вершин одного уровня');
-    GoToXY(45, 13);writeln('5: Высота дерева');
-    GoToXY(45, 15);writeln('6: Просмотр дерева');
-    GoToXY(45, 17);writeln('7: Добавить поддерево');
-    GoToXY(45, 19);writeln('8: Удалить поддерево');
-    GoToXY(45, 21);writeln('0: Выход');
-    GoToXY(40, 23); readln(Mode);
+    GoToXY(0, 1);writeln('Деревья');
+    GoToXY(0, 2);writeln('Выбери пункт');
+    GoToXY(0, 3);writeln('1: Создать дерево');
+    GoToXY(0, 4);writeln('2: Обход сверху вниз');
+    GoToXY(0, 5);writeln('3: Обход снизу вверх');
+    GoToXY(0, 6);writeln('4: Обход вершин одного уровня');
+    GoToXY(0, 7);writeln('5: Высота дерева');
+    GoToXY(0, 8);writeln('6: Просмотр дерева');
+    GoToXY(0, 9);writeln('7: Добавить поддерево');
+    GoToXY(0, 10);writeln('8: Удалить поддерево');
+    GoToXY(0, 11);writeln('0: Выход');
+    GoToXY(0, 12); readln(Mode);
     ClrScr;
     case Mode of 
       1: MakeTree(Top);

@@ -1,4 +1,4 @@
-﻿uses Crt, Compl, CompMatr, VectR, VectC, Stack, QueueLib, doublemenu, SubTrees,MakeFiles,MakeTree,BTrees;
+﻿uses Crt, Compl, CompMatr, VectR, VectC, Stack, QueueLib, doublemenu, SubTrees,MakeFiles,MyTree,BinTree;
 var Mode: integer;
     Ok: boolean;
     begin
@@ -13,7 +13,7 @@ var Mode: integer;
           GoToXY(1, 9);writeln('4: Комплексные вектора');
           GoToXY(1, 11);writeln('5: Стэки');
           GoToXY(1, 13);writeln('6: Очереди');
-          GoToXY(1, 15);writeln('7: двойноеМеню');
+          GoToXY(1, 15);writeln('7: Меню студентов');
           GoToXY(1, 17);writeln('8: Файлы');
           GoToXY(1, 19);writeln('9: Деревья');
           GoToXY(1, 21);writeln('10: Бинарные деревья');
@@ -30,7 +30,7 @@ var Mode: integer;
               7: LevelMenu;
               8: StudentsMenu;
               9: MenuTree;
-              10: BinTreesMenu;
+              10: MenuBinTree;
               0: Ok:= false
               else
                 begin

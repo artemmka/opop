@@ -14,7 +14,6 @@ procedure MakeStack(var top: Ptr);
 procedure ViewStack(var top:Ptr);
 procedure AddStack(var top:Ptr);
 procedure DeleteStack(var top:Ptr);
-procedure DeleteFirstElement(var top:Ptr);
 procedure ReverseStack(var top:Ptr);
 procedure SumStack(var Top1, Top2: Ptr);
 procedure wait;
@@ -82,25 +81,7 @@ procedure DeleteStack(var top: Ptr);
       Dispose(temp);
     end;
   end;
-  
-procedure DeleteFirstElement(var top: Ptr);
-  var сurrent, prev: Ptr;
-  begin
-    сurrent := top;
-    prev := nil;
-    while сurrent^.Next <> nil do
-    begin
-      prev := сurrent;
-      сurrent := сurrent^.Next;
-    end;
-  // если стек состоит только из одного элемента
-    if prev = nil then
-      top := nil
-    else
-      prev^.Next := nil;
-    Dispose(сurrent);
-  end;
-  
+
 procedure ReverseStack(var top: Ptr);
   var reversedSctack, temp: Ptr;
   begin
@@ -174,12 +155,6 @@ procedure MenuStack;
           writeln('Стэк удалён!');
           DeleteStack(Top1);
           wait;
-        end;
-     5: begin
-          ClrScr;
-          writeln('Первый элемент стэка удалён!');
-          DeleteFirstElement(Top1);
-          wait; 
         end;
      6: begin
           ClrScr;

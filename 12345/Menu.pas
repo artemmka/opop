@@ -1,4 +1,4 @@
-﻿uses Crt, Compl, CompMatr, VectR, VectC, Stack, QueueLib, doublemenu, SubTrees,MakeFiles,MyTree,BinTree;
+﻿uses Crt, Compl, CompMatr, VectR, VectC, Stack, QueueLib, doublemenu,MakeFiles,MyTree,BinTree,Exam;
 var Mode: integer;
     Ok: boolean;
     begin
@@ -17,7 +17,8 @@ var Mode: integer;
           GoToXY(1, 17);writeln('8: Файлы');
           GoToXY(1, 19);writeln('9: Деревья');
           GoToXY(1, 21);writeln('10: Бинарные деревья');
-          GoToXY(1, 24);writeln('0 Выход');
+          GoToXY(1, 23);writeln('11: Задачи');
+          GoToXY(1, 25);writeln('0 Выход');
           GoToXY(2, 28); readln(Mode);
           ClrScr;
             Case Mode of
@@ -31,6 +32,7 @@ var Mode: integer;
               8: StudentsMenu;
               9: MenuTree;
               10: MenuBinTree;
+              11: ExamMenu;
               0: Ok:= false
               else
                 begin
